@@ -1,0 +1,8 @@
+<ul>
+  <li><%= user.username %></li>
+  <% if action == :show %>
+  <li><a href="<%= users_url %>">User's Index Page</a></li>
+  <% else %>
+  <li><a href="<%= user_url(user) %>">User's Show Page</a></li>
+  <% end %>
+</ul>
